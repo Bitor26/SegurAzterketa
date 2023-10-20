@@ -5,7 +5,7 @@ def md5Kalkulatu(file_path):
 	hasher = hashlib.md5()
 	with open(file_path, 'rb') as file:
     	while True:
-        	data = file.read(65536)  # Read the file in 64k chunks
+        	data = file.read(65536)  
         	if not data:
             	break
         	hasher.update(data)
